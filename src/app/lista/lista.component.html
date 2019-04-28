@@ -1,0 +1,16 @@
+<div class="col-md-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let pessoa of pessoas">
+      <tr>
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.idade}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
