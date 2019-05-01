@@ -10,6 +10,7 @@
       <tr>
         <td>{{pessoa.nome}}</td>
         <td>{{pessoa.idade}}</td>
+        <td><Button class="btn btn-warning" [routerLink]="['/lista/edit', pessoa.id]">Alterar</Button></td>
       </tr>
     </tbody>
   </table>

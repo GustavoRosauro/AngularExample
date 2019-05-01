@@ -19,5 +19,4 @@ export class ListaComponent implements OnInit {
       this.pessoas = data;
     })
   }
-
 }

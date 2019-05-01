@@ -25,4 +25,7 @@ return this.http.post("/api/values",{nome:pessoa.nome,idade:pessoa.idade}).subsc
 public BuscaPessoas(){
   return this.http.get<Pessoa>('/api/values');
 }
+public GetPessoa(id:number){
+  return this.http.get<Pessoa>('/api/values/'+id);
+}
 }

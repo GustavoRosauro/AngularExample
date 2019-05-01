@@ -8,11 +8,13 @@ import { Pessoa } from './Model';
 import {HttpClientModule} from '@angular/common/http'
 import { HttpClient} from '@angular/common/http';
 import { ListaComponent } from './lista/lista.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaComponent
+    ListaComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
