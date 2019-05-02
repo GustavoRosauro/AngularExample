@@ -28,4 +28,22 @@ public BuscaPessoas(){
 public GetPessoa(id:number){
   return this.http.get<Pessoa>('/api/values/'+id);
 }
+public EditPessoa(pessoa:Pessoa){
+  return this.http.put("/api/values/"+pessoa.id,pessoa).subscribe(
+    data=>{
+      console.log("Ok");
+    },
+    (error:any)=>{
+      console.log(error);
+    });  
+}
+public DeletaPessoa(id:number){
+  return this.http.delete("/api/values/"+id).subscribe(data=>{
+    console.log("Feito");
+    window.location.href = "/lista";
+  },
+  (error:any)=>{
+    console.log(error);
+  });
+}
 }

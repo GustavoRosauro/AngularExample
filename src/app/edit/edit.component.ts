@@ -20,5 +20,15 @@ export class EditComponent implements OnInit {
       this.pessoa = data;
     });
   }
-
+AlterarPessoa(pessoaObj:Pessoa):void{
+  this.service.EditPessoa(pessoaObj);
+  this.LimpaCampos();
+}
+RemovePessoa(id:number){
+  this.service.DeletaPessoa(id);
+  //this.LimpaCampos();
+}
+LimpaCampos():void{
+window.location.href = "/lista";
+}
 }
